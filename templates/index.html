@@ -1,1 +1,97 @@
 
+
+<html>
+    <head>
+        <title>
+            YouTube Downloader
+        </title>
+        
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+    </head>
+    <body>
+
+        <!-- --------------------------------------------------Navigation Section-------------------------------------------- -->
+        <header>
+            <h2 class="logo">YouTube <span>Downloader</span></h2>
+            <nav class="navigator">
+                <a href="login.html">Home</a>
+                <a href="#">About us</a>
+                <a href="help.html">Help</a>
+                <a href="contact.html">Contact</a>
+                <button class="btn-popup">Login</button>
+            </nav>
+        </header>
+
+
+        <!-- ------------------------------------------------Header Section--------------------------------------------- -->
+        <div class="main">
+            <div class="container">
+                <h1>Welcome to <span> Youtube Downloader</span></h1>
+                <form method="POST">
+                    <div class="form-group">
+                        <h2><label for="url">Enter the YouTube video URL:</label></h2>
+                        <input type="text" id="url" name="url">
+                        <input type="submit" value="Download">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- --------------------------------------------------Description Section---------------------------------------------- -->
+        <div class="row">
+            <p class="def">Download Shorts, Reels, Videos & carousel</p> <br><br> 
+            <div class="row1">
+                <div class="row1-col2">
+                    <img src="{{bg}}" alt="YouTube App opening in phone" width="624px" height="400px" style="border-radius: 10px 0px 0px 10px;">
+                </div>
+
+                <div class="row1-col3">
+                    <h1>Download <br><span>YouTube</span>Videos <br>and Shorts</h1><p><b>Youtube</b> is an online web tool that helps you download Youtube, Videos, Reels, and IGTV videos. Youtube is designed to be easy to use on any device, such as a mobile phone, tablet, or computer.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------------------How To Download(rows) Section--------------------------------------------------- -->
+        <div class="rows">
+            <div class="help">
+                <div class="help-col2">
+                   <h4> HOW TO DOWNLOAD YouTube VIDEOS AND SHORTS</h4>
+                </div>
+                <div class="help-col3">
+                    <p>You must follow these three easy steps to download photos, videos, and reels from Instagram. See their description below.</p>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="row2-col2">
+                    <img src="{{first_pic}}" alt="YouTube App opening in phone" >
+                    <h2>Copy the URL</h2>
+                    <p>Open the YouTube application or website, and copy the URL of the  video, reels, carousel.</p>
+              
+                </div>
+
+                <div class="row2-col3">
+                    <img src="{{second_pic}}" alt="YouTube App opening in phone" >
+                    <h2>Paste the link</h2>
+                    <p>Go back to Youtube, paste the link into the field and click the Download button</p>
+              
+                </div>
+
+                <div class="row2-col4">
+                    <img src="{{third_pic}}" alt="YouTube App opening in phone">
+                    <h2>Download</h2>
+                    <p>Quickly you will get the results with several quality options. Download what fits your needs.</p>
+                </div>
+            </div>   
+        </div>
+        </div>
+
+
+        <!-- ---------------------------------------------------------Footer Section-------------------------------------------------------------------- -->
+        <div class="footer">  
+            @Copyright <a href="#"> G19 </a> 2023- All Right Reserved.   
+            </div>  
+    </body>
+</html>
